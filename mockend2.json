@@ -1,0 +1,39 @@
+{
+"Mill": {
+    "_": {
+    "items": 100
+    },
+
+    "MyIndex": "pymillstate",
+    "myId": {
+    "string": {
+        "minLength": 20,
+        "maxLength": 30
+    }
+    },
+    "myVersion": {
+    "int": 2467
+    },
+    "mySource": {
+    "machine_id": "DMU100P",
+    "state": {
+        "string": ["running", "powered", "off", "unknown"]
+    },
+    "timestamp": {
+        "dateTime": {
+        "min": "2023-01-01T00:00:00Z",
+        "max": "2020-02-28T23:59:59Z"
+        }
+    }, 
+    "duration": {
+        "float": {
+        "min": 0.0,
+        "max": 10000.0
+        }
+    },
+    "isClosed": {
+        "string": ["true", "false"]
+    }
+    }
+}
+}
