@@ -3,58 +3,25 @@
     "_": {
       "items": 10
     },
-    "myindex": {
-      "string": ["pymillstate"]
+    "myIndex": {
+      "string": "pymillstate"
     },
-    "cover": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
+    "myId": {
+      "string":{}
     },
-    "title": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
-      }
+    "myVersion":{
+      "int": 2467
     },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
-      }
-    },
-    "category": {
-      "string": ["one", "two", "three"]
-    },
-    "isDraft": {
-      "boolean": {}
-    },
-    "views": {
-      "int": {
-        "min": 0,
-        "max": 1000
-      }
-    },
-    "timestamp": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    },
-    "comments": {
-      "hasMany": "Comment"
+    "mySource": {
+      "hasOne": "Source"
     }
   },
-  "Comment": {
-    "_": {
-      "items": 25
+  "Source": {
+    "machine_id" : {
+      "string": "DMU100P"
     },
-    "email": {
-      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
-    },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
-      }
+    "state": {
+      "string": ["running", "powered", "off", "unknown"]
     },
     "timestamp": {
       "dateTime": {
@@ -62,8 +29,15 @@
         "max": "2020-12-31T23:59:59Z"
       }
     },
-    "post": {
-      "belongsTo": "Mill"
+    "duration": {
+      "int": {
+        "min": 0,
+        "max": 10000
+      }
+    },
+    "isClosed": {
+      "string": ["true", "false"]
     }
   }
 }
+
