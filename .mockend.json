@@ -1,18 +1,26 @@
-{
-  "Mill": {
-    "_": {
-      "items": 10
+
+  {
+    "Mill": {
+      "_": {
+        "items": 100
+      },
+      "myIndex": {
+        "string": ["pymillstate"]
+      },
+      "myId": {
+        "string":{}
+      },
+      "myVersion":{
+        "int": [2467]
+      },
+      "mySource": {
+        "hasMany": "Source"
+      }
     },
-    "myIndex": {
-      "string": ["pymillstate"]
-    },
-    "myId": {
-      "string":{}
-    },
-    "myVersion":{
-      "int": [2467]
-    },
-    "mySource": {
+    "Source": {
+      "_": {
+        "items": 1
+      },
       "machine_id" : {
         "string": ["DMU100P"]
       },
@@ -21,8 +29,8 @@
       },
       "timestamp": {
         "dateTime": {
-          "min": "2010-01-01T00:00:00Z",
-          "max": "2020-12-31T23:59:59Z"
+          "min": "2023-01-01T00:00:00Z",
+          "max": "2023-02-31T23:59:59Z"
         }
       },
       "duration": {
@@ -39,5 +47,6 @@
       }
     }
   }
-}
+  
+  
 
