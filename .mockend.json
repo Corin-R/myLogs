@@ -4,17 +4,17 @@
       "items": 100
     },
 
-    "_index": "pymillstate",
-    "_id": {
+    ".index": "pymillstate",
+    ".id": {
       "string": {
         "minLength": 20,
         "maxLength": 30
       }
     },
-    "_version": {
+    ".version": {
       "int": 2467
     },
-    "_source": {
+    ".source": {
       "machine_id": "DMU100P",
       "state": {
         "string": ["running", "powered", "off", "unknown"]
