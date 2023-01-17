@@ -13,36 +13,30 @@
       "int": [2467]
     },
     "mySource": {
-      "hasMany": "Source"
-    }
-  },
-  "Source": {
-    "_": {
-      "items": 1
-    },
-    "machine_id" : {
-      "string": ["DMU100P"]
-    },
-    "state": {
-      "string": ["running", "powered", "off", "unknown"]
-    },
-    "timestamp": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
+      "machine_id" : {
+        "string": ["DMU100P"]
+      },
+      "state": {
+        "string": ["running", "powered", "off", "unknown"]
+      },
+      "timestamp": {
+        "dateTime": {
+          "min": "2010-01-01T00:00:00Z",
+          "max": "2020-12-31T23:59:59Z"
+        }
+      },
+      "duration": {
+        "int": {
+          "min": 0,
+          "max": 10000
+        }
+      },
+      "isClosed": {
+        "string": ["true", "false"]
+      },
+      "post": {
+        "belongsTo": "Mill"
       }
-    },
-    "duration": {
-      "int": {
-        "min": 0,
-        "max": 10000
-      }
-    },
-    "isClosed": {
-      "string": ["true", "false"]
-    },
-    "post": {
-      "belongsTo": "Mill"
     }
   }
 }
