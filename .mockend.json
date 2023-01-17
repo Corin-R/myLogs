@@ -4,19 +4,22 @@
       "items": 10
     },
     "myIndex": {
-      "string": "pymillstate"
+      "string": ["pymillstate"]
     },
     "myId": {
       "string":{}
     },
     "myVersion":{
-      "int": 2467
+      "int": [2467]
     },
     "mySource": {
-      "hasOne": "Source"
+      "hasMany": "Source"
     }
   },
   "Source": {
+    "_": {
+      "items": 1
+    },
     "machine_id" : {
       "string": "DMU100P"
     },
@@ -37,6 +40,9 @@
     },
     "isClosed": {
       "string": ["true", "false"]
+    },
+    "post": {
+      "belongsTo": "Mill"
     }
   }
 }
