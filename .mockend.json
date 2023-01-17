@@ -21,7 +21,7 @@
       "items": 1
     },
     "machine_id" : {
-      "string": "DMU100P"
+      "string": ["DMU100P"]
     },
     "state": {
       "string": ["running", "powered", "off", "unknown"]
