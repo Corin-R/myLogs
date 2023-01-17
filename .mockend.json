@@ -15,7 +15,10 @@
       },
       "mySource": {
         "hasMany": "Source"
-      }
+      },
+	  "testField": {
+		  "string": ["running", "powered", "off", "unknown"]
+	  }
     },
     "Source": {
       "_": {
