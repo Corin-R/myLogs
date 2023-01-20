@@ -5,7 +5,7 @@
         "items": 100
       },
       "myIndex": {
-        "string": ["pymillstate"]
+        "string": ["blaindex"]
       },
       "myId": {
         "string":{}
@@ -25,7 +25,7 @@
         "items": 1
       },
       "machine_id" : {
-        "string": ["DMU100P"]
+        "string": ["MyMachine"]
       },
       "state": {
         "string": ["running", "powered", "off", "unknown"]
