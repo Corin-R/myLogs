@@ -1,7 +1,7 @@
 {
   "Source": {
     "_": {
-      "items": 100
+      "items": 10000
     },
     "machine_id": {
       "string": [
@@ -31,8 +31,8 @@
     },
     "timestamp": {
       "dateTime": {
-        "min": "2023-03-09T08:00:00Z",
-        "max": "2023-03-09T13:59:59Z"
+        "min": "2023-03-02T00:00:00Z",
+        "max": "2023-03-09T23:59:59Z"
       }
     },
     "endtimestamp": {
