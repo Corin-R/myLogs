@@ -20,10 +20,10 @@
     },
     "state": {
       "string": [
-        "running",
-        "powered",
-        "off",
-        "unknown"
+        "RUNNING",
+        "POWERED",
+        "OFF",
+        "UNKNOWN"
       ]
     },
     "timestamp": {
