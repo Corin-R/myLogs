@@ -21,6 +21,9 @@
     "state": {
       "string": [
         "RUNNING",
+        "RUNNING",
+        "RUNNING", 
+        "POWERED",
         "POWERED",
         "OFF",
         "UNKNOWN"
