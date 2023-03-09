@@ -22,7 +22,7 @@
     },
     "Source": {
       "_": {
-        "items": 1
+        "items": 100,
       },
       "machine_id" : {
         "string": ["DMU100P", "DMX50V", "RUNDMC666", "JSLG250", "MMWIS50", "MYS30", "DM650", "OIK550", "BL2TUE", "D3D", "L33T"]
@@ -43,7 +43,7 @@
         }
       },
       "isClosed": {
-        "string": ["false"]
+        "string": ["true"]
       },
       "post": {
         "belongsTo": "Mill"
